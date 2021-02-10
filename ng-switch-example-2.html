@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>ng-switch Directive</title> 
+      
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"> 
+    </script> 
+      
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+</head> 
+  
+<body ng-app="" style="text-align:center;"> 
+      
+    <h1 style="color:green;">Check the Number</h1> 
+    <h2 style="">ng-switch Directive Example </h2> 
+  
+    <div> 
+        <div class="col-md-3"> 
+            Type Number(1-2):  
+            <input ng-model="number" type="number" /> 
+        </div><br> 
+          
+        <div ng-switch="number" class="col-md-3"> 
+            <div ng-switch-when="1" class="btn btn-danger"> 
+                You entered {{number}} 
+            </div> 
+              
+            <div ng-switch-when="2" class="btn btn-primary"> 
+                You entered {{number}} 
+            </div> 
+              
+            <div ng-switch-default class="well"> 
+                This is the default section. 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+  
+</html>                     
